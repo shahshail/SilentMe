@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "/Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
+        "source": "/Users/shailshah/.android/build-cache/aeae6ad58d5dff6b021249d55552646b5585640c/output/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/shailshah/.android/build-cache/aeae6ad58d5dff6b021249d55552646b5585640c/output/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/build/intermediates/res/merged/debug/anim/design_snackbar_out.xml",
+        "source": "/Users/shailshah/.android/build-cache/f4f9e5e85bc9a464ea9122e171e56684ca6b91cd/output/res/anim/design_snackbar_out.xml"
+    },
+    {
+        "merged": "/Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/build/intermediates/res/merged/debug/anim/design_snackbar_in.xml",
+        "source": "/Users/shailshah/.android/build-cache/f4f9e5e85bc9a464ea9122e171e56684ca6b91cd/output/res/anim/design_snackbar_in.xml"
+    },
+    {
+        "merged": "/Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
+        "source": "/Users/shailshah/.android/build-cache/aeae6ad58d5dff6b021249d55552646b5585640c/output/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_out.xml",
+        "source": "/Users/shailshah/.android/build-cache/f4f9e5e85bc9a464ea9122e171e56684ca6b91cd/output/res/anim/design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "/Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_in.xml",
+        "source": "/Users/shailshah/.android/build-cache/f4f9e5e85bc9a464ea9122e171e56684ca6b91cd/output/res/anim/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
+        "source": "/Users/shailshah/.android/build-cache/aeae6ad58d5dff6b021249d55552646b5585640c/output/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/shailshah/.android/build-cache/aeae6ad58d5dff6b021249d55552646b5585640c/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
+        "source": "/Users/shailshah/.android/build-cache/aeae6ad58d5dff6b021249d55552646b5585640c/output/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
+        "source": "/Users/shailshah/.android/build-cache/aeae6ad58d5dff6b021249d55552646b5585640c/output/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/shailshah/.android/build-cache/aeae6ad58d5dff6b021249d55552646b5585640c/output/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/shailshah/.android/build-cache/aeae6ad58d5dff6b021249d55552646b5585640c/output/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
+        "source": "/Users/shailshah/.android/build-cache/aeae6ad58d5dff6b021249d55552646b5585640c/output/res/anim/abc_fade_out.xml"
+    }
+]
