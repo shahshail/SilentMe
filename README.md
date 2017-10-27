@@ -1,0 +1,40 @@
+# SilentMe
+
+## Overview
+
+- SilentMe app will automatically silent user's mobile device on selected Locations. The user can select a location with the use of Google Places API(https://developers.google.com/places/) and  the app will store location's placeID to the database using content providers.
+
+- The app will continuously check user's current location using Google geoLocation and PlaceDetectionClient.getCurrentPlace() method and whenever the user enters selected location app will notify the user to put their device to silent mode via Notifications. The user can silent phone from notification panel or simply reject the notification.
+
+## Libraries
+
+- Glid
+
+- RxJava
+
+- GooglePlayServicesPlaces
+
+- GooglePlayServicesLocation
+
+- Retrofit
+
+## Google Play Services API_KEY and Google API CLient
+
+- Some Google Play Services APIs require you to create a client that will connect to Google Play Services and use that connection to communicate with the APIs. We can connect our app to Google Play Api client using GooglwPlayClient.Builder() Method.
+![app txt](https://github.com/shahshail/SilentMe/blob/master/app/googlePlayApiClient.png)
+
+- In order to use user's current location developer must login to google play developer console and generate Google Places API API_KEY(https://console.developers.google.com/apis/) and define this key into AndroidManifest.xml's meta-data field.
+![app txt](https://github.com/shahshail/SilentMe/blob/master/app/api_key.png)
+
+## Data Persistence
+
+- Google will not allow us to store places data more than 30 days except placeID. Whenecer the user selects location then this app stores placeId into SqLite Database using content providers.
+
+## Warning
+
+- This repository is under construction. In order to use full functionality, Please wait untill final commit is completed.
+
+
+
+
+
