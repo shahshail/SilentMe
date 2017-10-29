@@ -26,6 +26,12 @@
 - In order to use user's current location developer must login to google play developer console and generate Google Places API API_KEY(https://console.developers.google.com/apis/) and define this key into AndroidManifest.xml's meta-data field.
 ![app txt](https://github.com/shahshail/SilentMe/blob/master/app/api_key.png)
 
+## Location Services aand GeoFences
+
+- Using GPS Polling can drain device's battery. To overcome this problem this app will use Geofences to locate device's location. 
+
+-This app requires location permission to locate current position and search places.
+
 ## Data Persistence
 
 - Google will not allow us to store places data more than 30 days except placeID. Whenecer the user selects location then this app stores placeId into SqLite Database using content providers.
