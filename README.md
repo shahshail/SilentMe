@@ -30,7 +30,7 @@
 
 - Using GPS Polling can drain device's battery. To overcome this problem this app will use Geofences to locate device's location. 
 
--This app requires location permission to locate current position and search places.
+- This app requires location permission to locate current position and search places.
 
 ## Data Persistence
 
