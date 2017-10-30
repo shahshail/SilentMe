@@ -12,7 +12,7 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="pref_ringtone_silent">Silent</string>
-
+    <string name="ringer_permissions">Ringer Permissions</string>
     <string name="pref_header_general">General</string>
 
     <string name="pref_title_social_recommendations">Enable social recommendations</string>

@@ -53,7 +53,8 @@
             android:authorities="com.corral.firebase.shailshah.silentme"
             android:exported="false" />
 
-        <activity android:name="com.corral.firebase.shailshah.silentme.LocationActivity" />
+        <receiver android:name="com.corral.firebase.shailshah.silentme.GeofenceBroadcastReceiver" />
+
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"

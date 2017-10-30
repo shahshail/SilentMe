@@ -2,6 +2,7 @@ package com.corral.firebase.shailshah.silentme;
 
 import android.Manifest;
 import android.app.AlertDialog;
+import android.app.NotificationManager;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -24,7 +25,9 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.FrameLayout;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -55,7 +58,9 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
     private GoogleApiClient mClient;
     FrameLayout layout;
     int navigationstatus;
+    private boolean mIsEnabled;
     PreferenceScreen screen;
+    private Geofencing mGeofencing;
 
 
     @Override
@@ -67,6 +72,24 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
         mAdapter = new SilentAdapter(this,null);
         mRecyclerView.setAdapter(mAdapter);
 
+        //Initializing the switch that enable and disable of the switch state
+        Switch onOffSwitch = (Switch) findViewById(R.id.enable_switch);
+        mIsEnabled = getPreferences(MODE_PRIVATE) .getBoolean(getString(R.string.setting_enabled),false);
+        onOffSwitch.setChecked(mIsEnabled);
+        onOffSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                SharedPreferences.Editor editor = getPreferences(MODE_PRIVATE).edit();
+                editor.putBoolean(getString(R.string.setting_enabled), isChecked);
+                mIsEnabled = isChecked;
+                editor.commit();
+                if (isChecked) mGeofencing.registerAllGeofences();
+                else mGeofencing.unRegisterAllGeofences();
+            }
+
+        });
+
+
         mClient  = new GoogleApiClient.Builder(this)
                 .addConnectionCallbacks(this)
                 .addOnConnectionFailedListener(this)
@@ -76,6 +99,9 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
                 .build();
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         sharedPreferences.registerOnSharedPreferenceChangeListener(this);
+
+         mGeofencing = new Geofencing(this,mClient);
+
 
 
 
@@ -128,6 +154,10 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
                 public void onResult(@NonNull PlaceBuffer places) {
 
                     mAdapter.swapPlaces(places);
+                    mGeofencing.updateGeofencesList(places);
+                    if (mIsEnabled) mGeofencing.registerAllGeofences();
+
+
 
                 }
             });
@@ -229,6 +259,17 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
         }
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         Log.v(MainActivity.class.getSimpleName(),"Geo status" + sharedPreferences.getBoolean("geo_key",false));
+        // Initialize ringer permissions checkbox
+        CheckBox ringerPermissions = (CheckBox) findViewById(R.id.ringer_permissions_checkbox);
+        NotificationManager nm = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+        // Check if the API supports such permission change and check if permission is granted
+        if (android.os.Build.VERSION.SDK_INT >= 24 && !nm.isNotificationPolicyAccessGranted()) {
+            ringerPermissions.setChecked(false);
+        } else {
+            ringerPermissions.setChecked(true);
+            ringerPermissions.setEnabled(false);
+        }
+
     }
 
     public void onLocationPermissionClicked(View view) {
@@ -282,6 +323,10 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
             Log.v(MainActivity.class.getSimpleName(), "the Geo preference is ...  " + result_geo_location);
         }
 
+    }
+    public void onRingerPermissionsClicked(View view) {
+        Intent intent = new Intent(android.provider.Settings.ACTION_NOTIFICATION_POLICY_ACCESS_SETTINGS);
+        startActivity(intent);
     }
 
     @Override

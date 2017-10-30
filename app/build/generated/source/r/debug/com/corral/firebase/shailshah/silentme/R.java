@@ -4131,15 +4131,16 @@ containing a value of this type.
         public static final int pref_notification=0x7f080046;
         public static final int pref_ringtone_silent=0x7f080047;
         public static final int pref_title_social_recommendations=0x7f080048;
+        public static final int privacy=0x7f080049;
         public static final int search_menu_title=0x7f080026;
-        public static final int setting_enabled=0x7f080049;
-        public static final int settings_label=0x7f08004a;
+        public static final int setting_enabled=0x7f08004a;
+        public static final int settings_label=0x7f08004b;
         public static final int status_bar_notification_info_overflow=0x7f080027;
-        public static final int title_dashboard=0x7f08004b;
-        public static final int title_home=0x7f08004c;
-        public static final int title_notifications=0x7f08004d;
-        public static final int v7_preference_off=0x7f08004e;
-        public static final int v7_preference_on=0x7f08004f;
+        public static final int title_dashboard=0x7f08004c;
+        public static final int title_home=0x7f08004d;
+        public static final int title_notifications=0x7f08004e;
+        public static final int v7_preference_off=0x7f08004f;
+        public static final int v7_preference_on=0x7f080050;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f0a00a3;

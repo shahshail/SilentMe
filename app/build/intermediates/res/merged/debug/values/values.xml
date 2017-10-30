@@ -799,6 +799,7 @@
     <string name="pref_notification">Show Notifications</string>
     <string name="pref_ringtone_silent">Silent</string>
     <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="privacy">http://www.google.com/policies/privacy</string>
     <string name="search_menu_title">Search</string>
     <string name="setting_enabled" translatable="false">EnabledSetting</string>
     <string name="settings_label">Settings</string>
@@ -817,7 +818,7 @@
         <item name="android:windowExitAnimation">@anim/design_bottom_sheet_slide_out</item>
     </style>
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+        
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>

@@ -38,7 +38,7 @@
             android:authorities="com.corral.firebase.shailshah.silentme"
             android:exported="false" />
 
-        <activity android:name=".LocationActivity"></activity>
+        <receiver android:name=".GeofenceBroadcastReceiver" />
     </application>
 
 </manifest>

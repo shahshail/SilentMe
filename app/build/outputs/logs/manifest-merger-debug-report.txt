@@ -97,10 +97,10 @@ ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/An
 		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:39:13-37
 	android:name
 		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:37:13-59
-activity#com.corral.firebase.shailshah.silentme.LocationActivity
+receiver#com.corral.firebase.shailshah.silentme.GeofenceBroadcastReceiver
 ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:41:9-63
 	android:name
-		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:41:19-51
+		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:41:19-60
 uses-sdk
 INJECTED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:25.3.1] /Users/shailshah/.android/build-cache/79c6d0990f5a6002a0735056a8e3e0c15284f864/output/AndroidManifest.xml:21:5-23:62
