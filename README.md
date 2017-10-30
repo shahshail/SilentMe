@@ -28,7 +28,9 @@
 
 ## Location Services aand GeoFences
 
-- Using GPS Polling can drain device's battery. To overcome this problem this app will use Geofences to locate device's location. 
+- Using GPS Polling can drain device's battery. To overcome this problem this app will use Geofences to locate device's location.
+
+- This app stores all the added locations latitudes and longitudes and setup 50 meter radius geofences using geofencing object. This geofence objects will automatically deleted in every 24 hours.
 
 - This app requires location permission to locate current position and search places.
 
