@@ -4,20 +4,27 @@ import android.Manifest;
 import android.app.AlertDialog;
 import android.content.ContentValues;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.database.Cursor;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.preference.PreferenceManager;
+import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,12 +33,18 @@ import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesRepairableException;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.common.api.PendingResult;
+import com.google.android.gms.common.api.ResultCallback;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.location.places.Place;
+import com.google.android.gms.location.places.PlaceBuffer;
 import com.google.android.gms.location.places.Places;
 import com.google.android.gms.location.places.ui.PlacePicker;
 
-public class MainActivity extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
+import java.util.ArrayList;
+import java.util.List;
+
+public class MainActivity extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, SharedPreferences.OnSharedPreferenceChangeListener  {
 
     private TextView mTextMessage;
     public static final String TAG = MainActivity.class.getSimpleName();
@@ -39,53 +52,47 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
     private static final int PLACE_PICKER_REQUEST = 1;
     private SilentAdapter mAdapter;
     private RecyclerView mRecyclerView;
+    private GoogleApiClient mClient;
+    FrameLayout layout;
+    int navigationstatus;
+    PreferenceScreen screen;
 
-    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
-            = new BottomNavigationView.OnNavigationItemSelectedListener() {
-
-        @Override
-        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            switch (item.getItemId()) {
-                case R.id.navigation_home:
-                    mTextMessage.setText(R.string.title_home);
-                    return true;
-                case R.id.navigation_dashboard:
-                    mTextMessage.setText(R.string.title_dashboard);
-                    return true;
-                case R.id.navigation_notifications:
-                    mTextMessage.setText(R.string.title_notifications);
-                    return true;
-            }
-            return false;
-        }
-
-    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
-        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-
         mRecyclerView = (RecyclerView) findViewById(R.id.places_list_recycler_view);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        mAdapter = new SilentAdapter(this);
+        mAdapter = new SilentAdapter(this,null);
         mRecyclerView.setAdapter(mAdapter);
 
-        GoogleApiClient client = new GoogleApiClient.Builder(this)
+        mClient  = new GoogleApiClient.Builder(this)
                 .addConnectionCallbacks(this)
                 .addOnConnectionFailedListener(this)
                 .addApi(LocationServices.API)
                 .addApi(Places.GEO_DATA_API)
                 .enableAutoManage(this,this)
                 .build();
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        sharedPreferences.registerOnSharedPreferenceChangeListener(this);
+
+
+
+    }
+
+   public void onDemoButtonClicked(View view)
+    {
+        Intent intent = new Intent(MainActivity.this,SettingsActivity.class);
+        startActivity(intent);
     }
 
     @Override
     public void onConnected(@Nullable Bundle bundle) {
 
         Log.v(TAG,"Connection Successful...");
+        refreshplacesData();
+        //locationListFragment.onRefreshWSwapCursor(places);
 
     }
 
@@ -99,6 +106,35 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
 
         Log.v(TAG, "Connection Failed...");
     }
+
+
+    public void refreshplacesData()
+    {
+        Uri uri = SilentContract.SilentEntry.CONTENT_URI;
+        Cursor data = getContentResolver().query(uri,null,null,null,null);
+
+        //Here we are simply loop over the cursor and add each ID to the list..
+        if (data == null || data.getCount() == 0) return;
+        List<String> guids = new ArrayList<String>();
+        while (data.moveToNext())
+        {
+            guids.add(data.getString(data.getColumnIndex(SilentContract.SilentEntry.COLUMN_PLACE_ID)));
+
+            //Place Buffer is nothing but a places API object that access the places...
+            PendingResult<PlaceBuffer> placeBuffer = Places.GeoDataApi.getPlaceById(mClient,guids.toArray(new String[guids.size()]));
+
+            placeBuffer.setResultCallback(new ResultCallback<PlaceBuffer>() {
+                @Override
+                public void onResult(@NonNull PlaceBuffer places) {
+
+                    mAdapter.swapPlaces(places);
+
+                }
+            });
+        }
+
+    }
+
 
     public void onAddPlaceButtonClicked(View view)
     {
@@ -173,6 +209,8 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
             contentValues.put(SilentContract.SilentEntry.COLUMN_PLACE_ID,placeId);
             getContentResolver().insert(SilentContract.SilentEntry.CONTENT_URI,contentValues);
 
+            refreshplacesData();
+
 
 
         }
@@ -189,6 +227,8 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
             locationPermissions.setChecked(true);
             locationPermissions.setEnabled(false);
         }
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        Log.v(MainActivity.class.getSimpleName(),"Geo status" + sharedPreferences.getBoolean("geo_key",false));
     }
 
     public void onLocationPermissionClicked(View view) {
@@ -196,5 +236,58 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
                 new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION},
                 PERMISSION_REQUEST_FINE_LOCATION);
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater  = getMenuInflater();
+        inflater.inflate(R.menu.navigation,menu);
+        return true;
     }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id= item.getItemId();
+
+        if (id == R.id.navigation_notifications)
+        {
+            Intent intent = new Intent(this,SettingsActivity.class);
+            startActivity(intent);
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
+
+        if(key.equals(getString(R.string.pref_loc_key)))
+        {
+            boolean result_location = sharedPreferences.getBoolean(key,getResources().getBoolean(R.bool.pref_loc_default));
+
+            if (result_location)
+            {
+                ActivityCompat.requestPermissions(MainActivity.this,
+                        new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION},
+                        PERMISSION_REQUEST_FINE_LOCATION);
+            }
+
+
+            Log.v(MainActivity.class.getSimpleName(), "the Location Preference is... " + result_location);
+
+        }
+        else if(key.equals(getString(R.string.pref_geo_key)))
+        {
+            boolean result_geo_location = sharedPreferences.getBoolean(key,getResources().getBoolean(R.bool.pref_loc_default));
+            Log.v(MainActivity.class.getSimpleName(), "the Geo preference is ...  " + result_geo_location);
+        }
+
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        PreferenceManager.getDefaultSharedPreferences(this).unregisterOnSharedPreferenceChangeListener(this);
+    }
+}
 

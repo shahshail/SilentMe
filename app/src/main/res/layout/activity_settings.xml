@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fragment android:id="@+id/activity_settings"
+    android:name="com.corral.firebase.shailshah.silentme.SettingsFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

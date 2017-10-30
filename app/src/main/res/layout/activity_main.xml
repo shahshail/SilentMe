@@ -6,138 +6,168 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+
     tools:context="com.corral.firebase.shailshah.silentme.MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/settings_label"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorPrimaryDark" />
 
-    <FrameLayout
-        android:id="@+id/content"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-            <LinearLayout
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4dp"
+                android:paddingRight="8dp"
+                android:paddingTop="4dp"
+                app:srcCompat="@drawable/ic_globe_primary_24dp" />
+
+            <Switch
+                android:id="@+id/enable_switch"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="24dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:orientation="vertical">
+                android:layout_gravity="center"
+                android:text="@string/enable_geofences"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        </LinearLayout>
 
-                <TextView
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4dp"
+                android:paddingRight="8dp"
+                android:paddingTop="4dp"
+                app:srcCompat="@drawable/ic_my_location_primary_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/location_permissions"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/black" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/location_permission_checkbox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
-                    android:text="@string/settings_label"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                    android:textColor="@color/colorPrimaryDark" />
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"
+                    android:onClick="onLocationPermissionClicked" />
 
-                <View
-                    android:layout_width="fill_parent"
-                    android:layout_height="2dip"
-                    android:layout_marginTop="4dp"
-                    android:background="@color/colorPrimary" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorPrimary"
+            android:onClick="onAddPlaceButtonClicked"
+            android:text="@string/add_new_location"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/white" />
+
+        <FrameLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:paddingBottom="4dp"
-                        android:paddingRight="8dp"
-                        android:paddingTop="4dp"
-                        app:srcCompat="@drawable/ic_globe_primary_24dp" />
-
-                    <Switch
-                        android:id="@+id/enable_switch"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:text="@string/enable_geofences"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:paddingBottom="4dp"
-                        android:paddingRight="8dp"
-                        android:paddingTop="4dp"
-                        app:srcCompat="@drawable/ic_my_location_primary_24dp" />
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:text="@string/location_permissions"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/location_list"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="@android:color/black" />
+                        android:textColor="@color/colorPrimaryDark" />
 
-                    <RelativeLayout
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dip"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/colorPrimary" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/places_list_recycler_view"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="wrap_content" />
 
-                        <CheckBox
-                            android:id="@+id/location_permission_checkbox"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
-                            android:layout_marginRight="8dp"
-                            android:onClick="onLocationPermissionClicked" />
-
-                    </RelativeLayout>
                 </LinearLayout>
 
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
-                    android:background="@color/colorPrimary"
-                    android:text="@string/add_new_location"
-                    android:onClick="onAddPlaceButtonClicked"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
-                    android:textColor="@android:color/white" />
+            </RelativeLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
-                    android:text="@string/location_list"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                    android:textColor="@color/colorPrimaryDark" />
+        </FrameLayout>
 
-                <View
-                    android:layout_width="fill_parent"
-                    android:layout_height="2dip"
-                    android:layout_marginTop="4dp"
-                    android:background="@color/colorPrimary" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
 
-                <android.support.v7.widget.RecyclerView
-                    android:id="@+id/places_list_recycler_view"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="4dp"
+                android:src="@drawable/powered_by_google_light" />
 
-            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:paddingBottom="4dp"
+                android:text="@string/privacy"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAlignment="center" />
+        </LinearLayout>
 
-        </RelativeLayout>
+        </LinearLayout>
 
-    </FrameLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_marginTop="4dp"
+        android:background="@color/colorPrimary" />
 
-    <android.support.design.widget.BottomNavigationView
-        android:id="@+id/navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:background="?android:attr/windowBackground"
-        app:menu="@menu/navigation" />
+
 
 </LinearLayout>

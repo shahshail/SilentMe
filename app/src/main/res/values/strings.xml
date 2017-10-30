@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">SilentMe</string>
     <string name="add_new_location">Add new location</string>
-    <string name="location_list">Locations</string>
+    <string name="location_list">Added Locations : </string>
     <string name="need_location_permission_message">You need to enable location permissions first</string>
     <string name="location_permissions_granted_message">Location Permissions Granted</string>
     <string name="setting_enabled" translatable="false">EnabledSetting</string>
@@ -11,4 +11,15 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="privacy">http://www.google.com/policies/privacy</string>
+
+    <string name="pref_notification">Show Notifications</string>
+    <string name="pref_geo_key" translatable="false">show_geo</string>
+    <string name="pref_loc_key" translatable="false">show_loc</string>
+
 </resources>

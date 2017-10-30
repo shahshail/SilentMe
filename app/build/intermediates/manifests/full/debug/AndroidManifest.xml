@@ -5,15 +5,15 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="19"
-        android:targetSdkVersion="26" />
+        android:minSdkVersion="21"
+        android:targetSdkVersion="25" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <meta-data
         android:name="android.support.VERSION"
-        android:value="26.0.0-alpha1" /> <!-- Include required permissions for Google Maps API to run. -->
+        android:value="25.3.1" /> <!-- Include required permissions for Google Maps API to run. -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <uses-feature
@@ -40,12 +40,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.corral.firebase.shailshah.silentme.SettingsActivity"
+            android:parentActivityName="com.corral.firebase.shailshah.silentme.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
 
         <provider
             android:name="com.corral.firebase.shailshah.silentme.provider.SilentContentProvider"
             android:authorities="com.corral.firebase.shailshah.silentme"
             android:exported="false" />
 
+        <activity android:name="com.corral.firebase.shailshah.silentme.LocationActivity" />
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"

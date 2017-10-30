@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <CheckBoxPreference
+        android:title="Locations Service"
+        android:key="@string/pref_loc_key"
+        android:defaultValue="@bool/pref_loc_default"/>
+
+    <SwitchPreferenceCompat
+        android:title="Geo Location"
+        app:key="@string/pref_geo_key"
+        android:defaultValue="false"/>
+</PreferenceScreen>

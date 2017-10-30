@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:2:1-32:12
+ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:2:1-44:12
 	package
 		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:3:5-53
 		INJECTED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml
@@ -14,97 +14,117 @@ ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/An
 		INJECTED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:4:5-67
+ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:5:5-67
 MERGED from [com.google.android.gms:play-services-maps:9.8.0] /Users/shailshah/.android/build-cache/c6a2805adf6dca1fd230a52584cdad46fe14632e/output/AndroidManifest.xml:20:5-66
 	android:name
-		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:4:22-64
+		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:5:5-79
+ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:6:5-79
 	android:name
-		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:5:22-76
+		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:6:22-76
 application
-ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:6:5-30:19
-MERGED from [com.android.support:design:26.0.0-alpha1] /Users/shailshah/.android/build-cache/f4f9e5e85bc9a464ea9122e171e56684ca6b91cd/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/shailshah/.android/build-cache/aeae6ad58d5dff6b021249d55552646b5585640c/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/shailshah/.android/build-cache/872018663019281a8802dd35dafe07980409a6f4/output/AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:transition:26.0.0-alpha1] /Users/shailshah/.android/build-cache/4110293ea2657c46efc900d8e6c2c8d33760eb31/output/AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/shailshah/.android/build-cache/59b9816884d20aec6b3a8cbf784ed82d75914d02/output/AndroidManifest.xml:26:5-20
+ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:8:5-42:19
+MERGED from [com.android.support:design:25.3.1] /Users/shailshah/.android/build-cache/79c6d0990f5a6002a0735056a8e3e0c15284f864/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:transition:25.3.1] /Users/shailshah/.android/build-cache/2fc7f1fd3595d099d5d4dac389ea83d805c7a540/output/AndroidManifest.xml:26:5-20
 MERGED from [com.google.android.gms:play-services-places:9.8.0] /Users/shailshah/.android/build-cache/f44fe2a11c58d5884eb5ee5996aef80cafb76e97/output/AndroidManifest.xml:18:5-19
 MERGED from [com.google.android.gms:play-services-maps:9.8.0] /Users/shailshah/.android/build-cache/c6a2805adf6dca1fd230a52584cdad46fe14632e/output/AndroidManifest.xml:24:5-19
 MERGED from [com.google.android.gms:play-services-location:9.8.0] /Users/shailshah/.android/build-cache/255fe83d15c92362d215157f73a756e6048e539a/output/AndroidManifest.xml:4:5-19
 MERGED from [com.google.android.gms:play-services-base:9.8.0] /Users/shailshah/.android/build-cache/12c1022337d9eff4591c59edef1ff700112d4359/output/AndroidManifest.xml:18:5-20:19
 MERGED from [com.google.android.gms:play-services-tasks:9.8.0] /Users/shailshah/.android/build-cache/f64e1f62833ab79c8b6f4061b47a9dd2ddd2297f/output/AndroidManifest.xml:4:5-19
 MERGED from [com.google.android.gms:play-services-basement:9.8.0] /Users/shailshah/.android/build-cache/ebb3980828d13179223f690b17c008e2a62818e6/output/AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/shailshah/.android/build-cache/ba98793302098109b592fa560837677ffa31eedc/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/shailshah/.android/build-cache/878eb5dd9100dc05db29e3a932fa97028099f965/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/shailshah/.android/build-cache/c58699d634064866b188854a96e9bb41b8e6d8af/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/shailshah/.android/build-cache/19b94381d49028162ed2d0fc79ae31ac71c92e94/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/shailshah/.android/build-cache/70682a730818441cdf4d35ee030be1da4e4c0413/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/shailshah/.android/build-cache/155a997d338172b8d2fce64c06befba369be46bf/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/shailshah/.android/build-cache/6d9bbf36ad389760fe513734f52463fd19632694/output/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:preference-v7:25.3.1] /Users/shailshah/.android/build-cache/44a1edf99a4f58a746e4ec93f6a11e16afccc4ed/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/shailshah/.android/build-cache/3c01fef9a9ebf28c60422ce14504bb21fb2f78d7/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/shailshah/.android/build-cache/76a4448a019a908612e43754c6a8e0f83f0b9fa2/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/shailshah/.android/build-cache/ab720f6170c9ca5448c9c11c1a854a7497603ea3/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:25.3.1] /Users/shailshah/.android/build-cache/d28cd16222a62043a07eac435e7c99e75c426fac/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/shailshah/.android/build-cache/19e32b657e30ceccf736a984136d6d154d3cc2cf/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/shailshah/.android/build-cache/d47746392228eaf6d7fbeff476aa3081d3d9b9af/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/shailshah/.android/build-cache/b2f48b22b4910ef35f41deb7b445cb0603e8a7f2/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/shailshah/.android/build-cache/17fb5bc25187d6913998c46d7d3d8df5ca0fe049/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] /Users/shailshah/.android/build-cache/427f858068df7774b6f25f0e70151e3af6fd1a18/output/AndroidManifest.xml:29:5-20
 	android:label
-		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:9:9-41
+		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:11:9-41
 	android:supportsRtl
-		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:11:9-35
+		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:13:9-35
 	android:roundIcon
-		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:10:9-54
+		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:12:9-54
 	android:allowBackup
-		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:7:9-35
+		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:9:9-35
 	android:icon
-		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:8:9-43
+		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:10:9-43
 	android:theme
-		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:12:9-40
+		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:14:9-40
 meta-data#com.google.android.geo.API_KEY
-ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:13:9-16:15
+ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:15:9-17:71
 	android:value
-		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:15:13-68
+		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:17:13-68
 	android:name
-		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:14:13-58
+		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:16:13-58
 activity#com.corral.firebase.shailshah.silentme.MainActivity
-ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:17:9-25:20
+ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:19:9-27:20
 	android:label
-		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:19:13-45
+		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:21:13-45
 	android:name
-		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:18:13-41
+		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:20:13-41
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:20:13-24:29
+ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:22:13-26:29
 action#android.intent.action.MAIN
-ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:21:17-69
+ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:23:17-69
 	android:name
-		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:21:25-66
+		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:23:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:23:17-77
+ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:25:17-77
 	android:name
-		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:23:27-74
+		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:25:27-74
+activity#com.corral.firebase.shailshah.silentme.SettingsActivity
+ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:28:9-34:20
+	android:parentActivityName
+		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:30:13-55
+	android:name
+		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:29:13-45
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:31:13-33:49
+	android:value
+		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:33:17-46
+	android:name
+		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:32:17-63
 provider#com.corral.firebase.shailshah.silentme.provider.SilentContentProvider
-ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:26:9-29:39
+ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:36:9-39:40
 	android:authorities
-		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:28:13-73
+		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:38:13-73
 	android:exported
-		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:29:13-37
+		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:39:13-37
 	android:name
-		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:27:13-97
+		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:37:13-59
+activity#com.corral.firebase.shailshah.silentme.LocationActivity
+ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:41:9-63
+	android:name
+		ADDED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml:41:19-51
 uses-sdk
 INJECTED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:design:26.0.0-alpha1] /Users/shailshah/.android/build-cache/f4f9e5e85bc9a464ea9122e171e56684ca6b91cd/output/AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/shailshah/.android/build-cache/aeae6ad58d5dff6b021249d55552646b5585640c/output/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/shailshah/.android/build-cache/872018663019281a8802dd35dafe07980409a6f4/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /Users/shailshah/.android/build-cache/d268bd2895646425d680fd9b497ec5868f88108c/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:26.0.0-alpha1] /Users/shailshah/.android/build-cache/4110293ea2657c46efc900d8e6c2c8d33760eb31/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/shailshah/.android/build-cache/59b9816884d20aec6b3a8cbf784ed82d75914d02/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:25.3.1] /Users/shailshah/.android/build-cache/79c6d0990f5a6002a0735056a8e3e0c15284f864/output/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:transition:25.3.1] /Users/shailshah/.android/build-cache/2fc7f1fd3595d099d5d4dac389ea83d805c7a540/output/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-places:9.8.0] /Users/shailshah/.android/build-cache/f44fe2a11c58d5884eb5ee5996aef80cafb76e97/output/AndroidManifest.xml:17:5-42
 MERGED from [com.google.android.gms:play-services-maps:9.8.0] /Users/shailshah/.android/build-cache/c6a2805adf6dca1fd230a52584cdad46fe14632e/output/AndroidManifest.xml:23:5-42
 MERGED from [com.google.android.gms:play-services-location:9.8.0] /Users/shailshah/.android/build-cache/255fe83d15c92362d215157f73a756e6048e539a/output/AndroidManifest.xml:3:5-42
 MERGED from [com.google.android.gms:play-services-base:9.8.0] /Users/shailshah/.android/build-cache/12c1022337d9eff4591c59edef1ff700112d4359/output/AndroidManifest.xml:17:5-42
 MERGED from [com.google.android.gms:play-services-tasks:9.8.0] /Users/shailshah/.android/build-cache/f64e1f62833ab79c8b6f4061b47a9dd2ddd2297f/output/AndroidManifest.xml:3:5-42
 MERGED from [com.google.android.gms:play-services-basement:9.8.0] /Users/shailshah/.android/build-cache/ebb3980828d13179223f690b17c008e2a62818e6/output/AndroidManifest.xml:17:5-42
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/shailshah/.android/build-cache/ba98793302098109b592fa560837677ffa31eedc/output/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/shailshah/.android/build-cache/878eb5dd9100dc05db29e3a932fa97028099f965/output/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/shailshah/.android/build-cache/c58699d634064866b188854a96e9bb41b8e6d8af/output/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/shailshah/.android/build-cache/19b94381d49028162ed2d0fc79ae31ac71c92e94/output/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/shailshah/.android/build-cache/70682a730818441cdf4d35ee030be1da4e4c0413/output/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/shailshah/.android/build-cache/155a997d338172b8d2fce64c06befba369be46bf/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/shailshah/.android/build-cache/6d9bbf36ad389760fe513734f52463fd19632694/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:preference-v7:25.3.1] /Users/shailshah/.android/build-cache/44a1edf99a4f58a746e4ec93f6a11e16afccc4ed/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/shailshah/.android/build-cache/3c01fef9a9ebf28c60422ce14504bb21fb2f78d7/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/shailshah/.android/build-cache/76a4448a019a908612e43754c6a8e0f83f0b9fa2/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/shailshah/.android/build-cache/ab720f6170c9ca5448c9c11c1a854a7497603ea3/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:25.3.1] /Users/shailshah/.android/build-cache/d28cd16222a62043a07eac435e7c99e75c426fac/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/shailshah/.android/build-cache/19e32b657e30ceccf736a984136d6d154d3cc2cf/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/shailshah/.android/build-cache/d47746392228eaf6d7fbeff476aa3081d3d9b9af/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/shailshah/.android/build-cache/b2f48b22b4910ef35f41deb7b445cb0603e8a7f2/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/shailshah/.android/build-cache/b0f698a96ad58044f079ca82244b67fa0451733d/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/shailshah/.android/build-cache/17fb5bc25187d6913998c46d7d3d8df5ca0fe049/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.1] /Users/shailshah/.android/build-cache/427f858068df7774b6f25f0e70151e3af6fd1a18/output/AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
-		ADDED from [com.android.support:design:26.0.0-alpha1] /Users/shailshah/.android/build-cache/f4f9e5e85bc9a464ea9122e171e56684ca6b91cd/output/AndroidManifest.xml:23:9-59
+		ADDED from [com.android.support:design:25.3.1] /Users/shailshah/.android/build-cache/79c6d0990f5a6002a0735056a8e3e0c15284f864/output/AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
 		INJECTED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml
@@ -112,22 +132,23 @@ MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/shailshah/
 		INJECTED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/src/main/AndroidManifest.xml
 meta-data#android.support.VERSION
-ADDED from [com.android.support:design:26.0.0-alpha1] /Users/shailshah/.android/build-cache/f4f9e5e85bc9a464ea9122e171e56684ca6b91cd/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/shailshah/.android/build-cache/aeae6ad58d5dff6b021249d55552646b5585640c/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/shailshah/.android/build-cache/872018663019281a8802dd35dafe07980409a6f4/output/AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /Users/shailshah/.android/build-cache/d268bd2895646425d680fd9b497ec5868f88108c/output/AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:transition:26.0.0-alpha1] /Users/shailshah/.android/build-cache/4110293ea2657c46efc900d8e6c2c8d33760eb31/output/AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/shailshah/.android/build-cache/59b9816884d20aec6b3a8cbf784ed82d75914d02/output/AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/shailshah/.android/build-cache/ba98793302098109b592fa560837677ffa31eedc/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/shailshah/.android/build-cache/878eb5dd9100dc05db29e3a932fa97028099f965/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/shailshah/.android/build-cache/c58699d634064866b188854a96e9bb41b8e6d8af/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/shailshah/.android/build-cache/19b94381d49028162ed2d0fc79ae31ac71c92e94/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/shailshah/.android/build-cache/70682a730818441cdf4d35ee030be1da4e4c0413/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/shailshah/.android/build-cache/155a997d338172b8d2fce64c06befba369be46bf/output/AndroidManifest.xml:25:5-27:41
+ADDED from [com.android.support:design:25.3.1] /Users/shailshah/.android/build-cache/79c6d0990f5a6002a0735056a8e3e0c15284f864/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:transition:25.3.1] /Users/shailshah/.android/build-cache/2fc7f1fd3595d099d5d4dac389ea83d805c7a540/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:preference-v7:25.3.1] /Users/shailshah/.android/build-cache/44a1edf99a4f58a746e4ec93f6a11e16afccc4ed/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/shailshah/.android/build-cache/3c01fef9a9ebf28c60422ce14504bb21fb2f78d7/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/shailshah/.android/build-cache/76a4448a019a908612e43754c6a8e0f83f0b9fa2/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/shailshah/.android/build-cache/ab720f6170c9ca5448c9c11c1a854a7497603ea3/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] /Users/shailshah/.android/build-cache/d28cd16222a62043a07eac435e7c99e75c426fac/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/shailshah/.android/build-cache/19e32b657e30ceccf736a984136d6d154d3cc2cf/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/shailshah/.android/build-cache/d47746392228eaf6d7fbeff476aa3081d3d9b9af/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/shailshah/.android/build-cache/b2f48b22b4910ef35f41deb7b445cb0603e8a7f2/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/shailshah/.android/build-cache/b0f698a96ad58044f079ca82244b67fa0451733d/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/shailshah/.android/build-cache/17fb5bc25187d6913998c46d7d3d8df5ca0fe049/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] /Users/shailshah/.android/build-cache/427f858068df7774b6f25f0e70151e3af6fd1a18/output/AndroidManifest.xml:25:5-27:34
 	android:value
-		ADDED from [com.android.support:design:26.0.0-alpha1] /Users/shailshah/.android/build-cache/f4f9e5e85bc9a464ea9122e171e56684ca6b91cd/output/AndroidManifest.xml:27:9-38
+		ADDED from [com.android.support:design:25.3.1] /Users/shailshah/.android/build-cache/79c6d0990f5a6002a0735056a8e3e0c15284f864/output/AndroidManifest.xml:27:9-31
 	android:name
-		ADDED from [com.android.support:design:26.0.0-alpha1] /Users/shailshah/.android/build-cache/f4f9e5e85bc9a464ea9122e171e56684ca6b91cd/output/AndroidManifest.xml:26:9-47
+		ADDED from [com.android.support:design:25.3.1] /Users/shailshah/.android/build-cache/79c6d0990f5a6002a0735056a8e3e0c15284f864/output/AndroidManifest.xml:26:9-47
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.android.gms:play-services-maps:9.8.0] /Users/shailshah/.android/build-cache/c6a2805adf6dca1fd230a52584cdad46fe14632e/output/AndroidManifest.xml:19:5-78
 	android:name
