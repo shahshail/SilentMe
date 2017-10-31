@@ -38,9 +38,7 @@
 
 - Google will not allow us to store places data more than 30 days except placeID. Whenecer the user selects location then this app stores placeId into SqLite Database using content providers.
 
-## Warning
 
-- This repository is under construction. In order to use full functionality, Please wait untill final commit is completed.
 
 
 
