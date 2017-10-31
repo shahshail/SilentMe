@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
-        "source": "/Users/shailshah/.android/build-cache/3c01fef9a9ebf28c60422ce14504bb21fb2f78d7/output/res/color/switch_thumb_material_light.xml"
-    },
-    {
         "merged": "/Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/build/intermediates/res/merged/debug/color/abc_tint_switch_thumb.xml",
         "source": "/Users/shailshah/.android/build-cache/3c01fef9a9ebf28c60422ce14504bb21fb2f78d7/output/res/color/abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "/Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
+        "source": "/Users/shailshah/.android/build-cache/3c01fef9a9ebf28c60422ce14504bb21fb2f78d7/output/res/color/switch_thumb_material_light.xml"
     },
     {
         "merged": "/Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/build/intermediates/res/merged/debug/color/abc_tint_spinner.xml",

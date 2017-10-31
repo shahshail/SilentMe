@@ -800,6 +800,7 @@
     <string name="pref_ringtone_silent">Silent</string>
     <string name="pref_title_social_recommendations">Enable social recommendations</string>
     <string name="privacy">http://www.google.com/policies/privacy</string>
+    <string name="ringer_permissions">Ringer Permissions</string>
     <string name="search_menu_title">Search</string>
     <string name="setting_enabled" translatable="false">EnabledSetting</string>
     <string name="settings_label">Settings</string>

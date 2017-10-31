@@ -12,12 +12,12 @@
         "source": "/Users/shailshah/.android/build-cache/79c6d0990f5a6002a0735056a8e3e0c15284f864/output/res/layout/design_bottom_sheet_dialog.xml"
     },
     {
-        "merged": "/Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/build/intermediates/res/merged/debug/layout/design_bottom_navigation_item.xml",
-        "source": "/Users/shailshah/.android/build-cache/79c6d0990f5a6002a0735056a8e3e0c15284f864/output/res/layout/design_bottom_navigation_item.xml"
-    },
-    {
         "merged": "/Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/build/intermediates/res/merged/debug/layout/design_navigation_item.xml",
         "source": "/Users/shailshah/.android/build-cache/79c6d0990f5a6002a0735056a8e3e0c15284f864/output/res/layout/design_navigation_item.xml"
+    },
+    {
+        "merged": "/Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/build/intermediates/res/merged/debug/layout/design_bottom_navigation_item.xml",
+        "source": "/Users/shailshah/.android/build-cache/79c6d0990f5a6002a0735056a8e3e0c15284f864/output/res/layout/design_bottom_navigation_item.xml"
     },
     {
         "merged": "/Users/shailshah/Documents/Projects/Shush-Me/SilentMe/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
