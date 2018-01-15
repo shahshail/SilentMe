@@ -13,8 +13,6 @@
 
 - Glid
 
-- RxJava
-
 - GooglePlayServicesPlaces
 
 - GooglePlayServicesLocation
@@ -41,6 +39,23 @@
 
 - Google will not allow us to store places data more than 30 days except placeID. So the most effiecient way to get location is to store placeId into database and get Location from placeId. 
 - Whenever the user selects location then this app stores placeId into SqLite Database using content providers.
+
+## Screens
+### Home Screen
+![app txt](https://github.com/shahshail/SilentMe/blob/master/home.png)
+
+### Search Location
+![app txt](https://github.com/shahshail/SilentMe/blob/master/search.png)
+
+### Add Location
+![app txt](https://github.com/shahshail/SilentMe/blob/master/result.png)
+
+### Current Location
+![app txt](https://github.com/shahshail/SilentMe/blob/master/map.png)
+
+### Notification (Silent/Ring)
+![app txt](https://github.com/shahshail/SilentMe/blob/master/noti.png)
+
 
 
 
