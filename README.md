@@ -11,13 +11,10 @@
 
 ## Libraries
 
-- Glid
-
 - GooglePlayServicesPlaces
 
 - GooglePlayServicesLocation
 
-- Retrofit
 
 ## Google Play Services API_KEY and Google API CLient
 
